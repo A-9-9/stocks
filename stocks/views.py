@@ -59,8 +59,8 @@ def calc_weights(request):
         return weights, returns, risks, comp
 
     os.chdir('../stocks')
-    file = os.getcwd() + 'S_P500.xlsx'
-    weights, returns, risks, comp = fn(file='/Users/apple/Documents/Django/stocksSite/project/stocks/S_P500.xlsx')
+    file = os.getcwd() + '/S_P500.xlsx'
+    weights, returns, risks, comp = fn(file=file)
     # init company in DB at the first time
     # for i in comp:
     #     company_service.createCompany(i)
